@@ -1,0 +1,31 @@
+h1{
+  color:yellow;
+  text-align: center;
+
+}
+h2{
+  color:yellow;
+  text-align: center;
+
+}
+p{
+  color:yellow;
+  text-align: center;
+}
+
+body{
+  background-image: url(https://images.unsplash.com/photo-1656872626363-7c9a20083bbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0MXxDRHd1d1hKQWJFd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60);
+  color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#a{
+  padding-top: 100x;
+}
+table,thead,th,tr,td{
+  color:yellow;
+  border:2px solid white;
+  font-size:20px;
+  margin:auto;
+}

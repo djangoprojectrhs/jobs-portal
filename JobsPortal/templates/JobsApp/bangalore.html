@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title></title>
+    <link rel="stylesheet" href="{% static "/css/demo6.css" %}">
+  </head>
+  <body>
+    <h2>Bangalore Jobs Vacancy</h2><hr>
+    {% if jobs_lst %}
+    <table>
+      <thead>
+        <th>Company</th>
+        <th>Title</th>
+      </thead>
+      {% for job in jobs_lst %}
+      <tr>
+        <td>{{job.company}}</td>
+        <td>{{job.title}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p> No jobs found in Bangalore</p>
+    {% endif %}
+  </body>
+</html>
